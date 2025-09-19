@@ -13,6 +13,8 @@ olympics <- read_csv("Olympics.csv")
 olympics$total.medals <- olympics$gold + olympics$silver + olympics$bronze
 
 # b. For each country, how many gold medals has it won?
-
+country_gold <- olympics %>%
+  group_by(country) %>%
+  summarise(total_gold = sum(gold))
 
 # c. For each year, how many total medals were given out?
