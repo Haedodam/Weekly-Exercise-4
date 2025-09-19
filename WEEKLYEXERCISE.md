@@ -11,5 +11,7 @@ Ideal civic tech contributes to the development of smart cities. A smart city is
 In the end, civic tech is not simply a tool for making cities more efficient. it is a key for creating cities that are more equitable and democratic.
 
 References
+
 [1] Wilson, B., & Chakraborty, A. (2019). Planning smart(er) cities: The promise of civic technology. Journal of Urban Technology, 26(4), 29–51. https://doi.org/10.1080/10630732.2019.1631097
+
 [2] Wood, C. (2016, August 15). What is civic tech? GovTech. https://www.govtech.com/civic/what-is-civic-tech.html
