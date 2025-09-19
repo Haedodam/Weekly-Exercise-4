@@ -19,3 +19,18 @@ largest_1992
 
 # For the following countries, plot the number of gold medals earned over time:
 # United States, France, Germany, Russia, and China.
+gold_plot <- olympics %>%
+  filter(country %in% c("United States", "France", "Germany", "Russia", "China")) %>%
+  group_by(country, year) %>%
+  summarise(total_gold = sum(gold, na.rm = TRUE)) %>%
+  ggplot(aes(x = year, y = total_gold, color = country)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  labs(
+    title = "The number of gold medals earned over time",
+    x = "Years",
+    y = "Number of gold medals"
+  ) +
+  theme_minimal()
+
+gold_plot
