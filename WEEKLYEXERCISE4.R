@@ -18,3 +18,6 @@ country_gold <- olympics %>%
   summarise(total_gold = sum(gold))
 
 # c. For each year, how many total medals were given out?
+year_medals <- olympics %>%
+  group_by(year) %>%
+  summarise(total_medals = sum(total.medals))
